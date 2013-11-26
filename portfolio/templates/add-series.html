@@ -1,0 +1,15 @@
+<div id='add-series' class='rounded-corners'>
+    <form name='{{ series }}' action='/add/series' method='post' id='add-series-form'>
+        {%  csrf_token %}
+        <p>
+            Name of series: 
+        </p>{{  series_form.name }}
+        <p>
+            Description: 
+        </p>{{ series_form.description }}
+		<input type='submit' id='submit-series' value='Submit' />
+        <button id='close-add-series'>
+            close
+        </button>
+    </form>
+</div>

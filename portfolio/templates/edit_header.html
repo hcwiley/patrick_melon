@@ -1,0 +1,9 @@
+<a id='logo' href='/edit'><h2>patrickmelon.</h2></a>
+<div id='nav'>
+	{% for series in serieses %}
+	   <a href='/edit/{{ series.slug }}' id='{{ series }}' class='{% if pieces.0.series == series or pieces.all.0.series.all.0 == series %}currentPage{% else %} notCur {% endif %}'><p>{{ series }}</p></a>
+   {% endfor %}
+   <p class='link' id='add-new-series'>(+) add new series</p>
+</div>
+<div id='contact'><a href='/edit/contact'><p>man behind the melon</p></a></div>
+{% include 'add-series.html' %}

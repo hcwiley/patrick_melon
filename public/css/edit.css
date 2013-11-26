@@ -1,0 +1,97 @@
+#login{
+	border: 1px solid #000;
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	top: 30px;
+	left: 900px;
+}
+
+#user-menu{
+	position: absolute;
+	top: 0px;
+	left: 900px;
+	width: 200px;
+}
+
+#add-new-series{
+	color: #00afdb;
+}
+#add-new-series:hover{
+	cursor: pointer;
+}
+
+#add-series{
+    position: absolute;
+    color: #000;
+    background: #FFF;
+    opacity: 0;
+    z-index: -1;
+    top: 150px;
+    left: 200px;
+    width: 600px;
+    height: 250px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+
+#add-new-piece{
+    border: 1px solid black;
+	opacity: 0;
+}
+
+#add-new-piece:hover{
+	cursor: pointer;
+}
+
+#add-new-piece h1{
+    position: relative;
+	top: 5px;
+	left: 40px;
+}
+
+#add-piece{
+    position: absolute;
+    color: #000;
+    background: #FFF;
+    opacity: 0;
+    z-index: -1;
+    top: 50px;
+    left: 0px;
+    width: 600px;
+    height: 250px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#add-piece-form{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#add-piece-form p{
+    width: 100px;
+    height: 20px;
+    margin: 10px 5px 50px 5px;
+    display: inline-block;
+}
+
+.editting{
+	border: 1px dashed #F00;
+}
+.editting h4{
+	color: #f00;
+    z-index: 2;
+	position: absolute;
+	left: 30px;
+	height: 20px;
+	width: 100px;
+}
+
+#save-menu{
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+}

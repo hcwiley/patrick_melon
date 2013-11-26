@@ -1,0 +1,23 @@
+<div id='piece' class='piece content'>
+	{% block main-image %}
+	<div id='current-image'><img id='{{ piece.pk }}' src='{{ piece.default_image }}'/></div>
+	{% endblock %}
+	<div id='piece-info'>
+		<h3>{{ piece.series.all.0 }}</h3>
+		<p id='discription'>{% autoescape off %}{{ piece.series.all.0.description }}{% endautoescape %}</p>
+		<!--<p id='price'><strong>price:</strong> {% if piece.price == None %}Not for sale{% else %}${{ piece.price }}{% endif %}</p>!-->
+		<p id='year'><strong>year:</strong> {{ piece.date.year }}</p>
+	</div>
+	<div id='other-images'>
+    {% for p in pieces %}
+        {% if piece != p %}
+	   <img id='other-{{ p.pk }}' src='{{ p.default_image }}' />
+       {% endif %}
+	{% endfor %}
+	</div>
+</div>
+<div id='big-img'>
+	<h1 id='prev' title='previous image'><</h1>
+	<img src='' class='ignore' title='click image or press esc to close'/>
+	<h1 id='next'title='next image'>></h1>
+</div>

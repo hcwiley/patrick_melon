@@ -1,0 +1,10 @@
+<div id='gallery' class='content'>
+{% for piece in pieces %}
+	<div class='gallery_thumb img'><a href='/{{ piece.series.all.0.slug }}/{{ piece.slug }}'><img src='{{ piece.default_image }}'/></a></div>
+{% endfor %}
+</div>
+
+<script type='text/javascript'>
+    initImgs();
+    window.setTimeout('initImgs();initImgs();',450);
+</script>

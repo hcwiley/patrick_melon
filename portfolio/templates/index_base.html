@@ -1,0 +1,11 @@
+<div id='series' class='content'>
+    {% for series in serieses %}
+    <div class='series_thumb'>
+        <a href='/{{ series }}'><img src='{{ series.piece_piece_series.all.0.default_image }}'/>
+            <p>
+                {{ series }}
+            </p>
+        </a>
+    </div>
+    {% endfor %}
+</div>
